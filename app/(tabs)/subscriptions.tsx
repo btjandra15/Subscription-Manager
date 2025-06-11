@@ -126,16 +126,17 @@ const Subscriptions= () => {
 
   return (
     <SafeAreaView className="flex-1 bg-black">
-      <View className="flex-1 p-4">
+      <View className="flex-1 p-4 mt-5">
         {/* Header Section */}
         <View className="flex-row items-center justify-between mt-4 mb-6">
           <TouchableOpacity onPress={() => router.back()}>
-            {/* In a real app, you'd use navigation.goBack() or similar */}
             <Ionicons name="arrow-back" size={28} color="white" />
           </TouchableOpacity>
           <Text className="text-white text-2xl font-bold">Subscriptions</Text>
-          {/* Placeholder for alignment or another icon */}
-          <View style={{ width: 28 }} />
+          
+          <TouchableOpacity className="bg-blue-600 w-10 h-10 rounded-full justify-center items-center">
+            <FontAwesome name="plus" size={16} color="white" />
+          </TouchableOpacity>
         </View>
 
         {/* Informative Text */}
